@@ -137,3 +137,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable zygote critical window.
 PRODUCT_PROPERTY_OVERRIDES += \
     zygote.critical_window.minute=10
+
+PRODUCT_COPY_FILES += \
+    device/google/sunfish/product-permissions-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-permissions-stock.xml
