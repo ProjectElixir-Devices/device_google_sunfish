@@ -19,6 +19,9 @@ TARGET_KERNEL_CONFIG := sunfish_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.14
 TARGET_NEEDS_DTBOIMAGE := true
 
+# Needed for camera
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor
