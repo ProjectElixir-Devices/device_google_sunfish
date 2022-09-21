@@ -4,8 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common xdroid stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
+XDROID_MAINTAINER := スフィヤン
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
@@ -15,7 +17,7 @@ include device/google/sunfish/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a
-PRODUCT_NAME := lineage_sunfish
+PRODUCT_NAME := xdroid_sunfish
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340

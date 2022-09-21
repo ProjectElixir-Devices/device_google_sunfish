@@ -17,8 +17,10 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_sunfish.mk \
     $(LOCAL_DIR)/aosp_sunfish_hwasan.mk \
-    $(LOCAL_DIR)/lineage_sunfish.mk
+    $(LOCAL_DIR)/xdroid_sunfish.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_sunfish-userdebug \
-    lineage_sunfish-userdebug
+    xdroid_sunfish-user \
+    xdroid_sunfish-userdebug \
+    xdroid_sunfish-eng
