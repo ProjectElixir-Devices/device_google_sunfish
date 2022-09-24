@@ -8,6 +8,7 @@
 $(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 XDROID_MAINTAINER := スフィヤン
+XDROID_BOOT := 1080
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
@@ -18,10 +19,6 @@ include device/google/sunfish/device-lineage.mk
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a
 PRODUCT_NAME := xdroid_sunfish
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=sunfish \
