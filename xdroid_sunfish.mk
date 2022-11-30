@@ -7,7 +7,7 @@
 # Inherit some common xdroid stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
-XDROID_MAINTAINER := スフィヤン
+XDROID_MAINTAINER := xioyo
 XDROID_BOOT := 1080
 
 # Inherit device configuration
