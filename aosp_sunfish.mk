@@ -67,7 +67,6 @@ include device/google/sunfish/device-lineage.mk
 
 # Elixir Flags
 IS_PHONE := true
-ELIXIR_MAINTAINER := xioyo
 ELIXIR_BUILD_TYPE := OFFICIAL
 BUILD_USERNAME := xioyo
 BUILD_HOSTNAME := Elixir
