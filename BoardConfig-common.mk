@@ -36,6 +36,9 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # GOOGLE: workaround for https://android-review.googlesource.com/c/platform/system/sepolicy/+/1532995
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 

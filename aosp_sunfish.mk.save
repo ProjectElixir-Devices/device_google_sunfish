@@ -63,29 +63,12 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-include device/google/sunfish/device-lineage.mk
-
-# Elixir Flags
-IS_PHONE := true
-TARGET_BOOT_ANIMATION_RES := 1080
-ELIXIR_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := google
-PRODUCT_NAME := aosp_sunfish
-PRODUCT_DEVICE := sunfish
-PRODUCT_MODEL := Pixel 4a
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=sunfish \
-    PRIVATE_BUILD_DESC="sunfish-user 13 TQ3A.230805.001.S1 10786265 release-keys"
-
-BUILD_FINGERPRINT := google/sunfish/sunfish:13/TQ3A.230805.001.S1/10786265:user/release-keys
-
-$(call inherit-product, vendor/google/sunfish/sunfish-vendor.mk)
+# Project-Elixir
+IS_PHONE := true 
+TARGET_BOOT_ANIMATION_RES := 1080 
+TARGET_GAPPS_ARCH := arm64 
+PRODUCT_MANUFACTURER := Google 
+PRODUCT_BRAND := Android PRODUCT_NAME 
+:= aosp_sunfish PRODUCT_DEVICE := 
+sunfish PRODUCT_MODEL := AOSP on 
+sunfish
