@@ -3,3 +3,5 @@ vendor/google/sunfish
 kernel/google/msm-4.14
 hardware/lineage/compat
 hardware/qcom/wlan
+hardware/qcom/sm8150/display
+hardware/qcom/sm8150/media
