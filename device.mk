@@ -270,6 +270,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     ro.config.media_vol_steps=25 \
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.spatializer_enabled=true
+
 # Audio Features
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.external_dsp.enable=true \

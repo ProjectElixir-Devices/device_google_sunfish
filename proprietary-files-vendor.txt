@@ -842,6 +842,7 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libspatialaudio.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib/vendor-pixelatoms-cpp.so
 vendor/lib/vendor.display.color@1.0.so
