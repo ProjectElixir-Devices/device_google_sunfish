@@ -181,5 +181,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.6.vendor:64 \
     android.system.net.netd@1.1.vendor:64
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-gms.xml
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
